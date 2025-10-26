@@ -1,0 +1,22 @@
+{
+  "name": "ai-peer-review",
+  "version": "1.0.0",
+  "description": "AI-Driven Peer Review System",
+  "main": "server/index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test-server": "node test-server.js"
+  },
+  "keywords": ["ai", "peer-review", "nlp", "plagiarism-detection"],
+  "author": "AI Udbhav Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
